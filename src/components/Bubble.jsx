@@ -21,7 +21,7 @@ export default function Bubble() {
 
 		const flowTL = gsap.timeline()
 
-		if (Math.abs(newRandomScale - currentRandomScale) > 0.1) {
+		if (Math.abs(newRandomScale - currentRandomScale) > 0.05 && Math.abs(newRandomStrength - currentRandomStrength) > 0.1) {
 			flowTL.to(meshRef.current.material.layers[0], {
 				scale: newRandomScale,
 				strength: newRandomStrength,
