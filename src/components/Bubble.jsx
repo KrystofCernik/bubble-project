@@ -26,7 +26,7 @@ export default function Bubble() {
 				scale: newRandomScale,
 				strength: newRandomStrength,
 				duration: 3.5,
-				ease: 'power3.inOut'
+				ease: 'power4.inOut'
 			})
 		} else {
 			getRandomShape()
